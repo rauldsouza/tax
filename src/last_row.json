@@ -1,0 +1,15 @@
+{
+  "count": 472,
+  "last": {
+    "security": "Li",
+    "isin": "INE142M01025",
+    "qty": 50,
+    "sell_date": "16-Sep-24",
+    "sell_value": 54901.75,
+    "purchase_date": "16-Sep-24",
+    "purchase_value": 55231.3,
+    "holding_period": 0,
+    "profit_loss": -329.55,
+    "type": "Short Term"
+  }
+}

@@ -1,0 +1,5 @@
+Security,ISIN,Buy Date,Buy Price,Sell Date,Sell Price,Holding Period,Type,Profit/Loss
+ABC Corp,IN0000001,01-Jan-24,100.0,01-Jul-24,120.0,182,,20.0
+XYZ Ltd,IN0000002,01-Jan-23,200.0,01-Feb-24,180.0,396,,-20.0
+DEF Inc,IN0000003,01-Jun-24,50.0,01-Sep-24,80.0,92,,30.0
+GHI PLC,IN0000004,01-Jan-22,300.0,01-Mar-24,350.0,790,,50.0
