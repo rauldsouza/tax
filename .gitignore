@@ -1,0 +1,9 @@
+# Ignore confidential and export files
+resources/*.pdf
+Downloads/
+*.csv
+*.json
+__pycache__/
+*.pyc
+run_stdout.txt
+run_stderr.txt

@@ -1,0 +1,3 @@
+PDF authentication success: 6
+--- Page 4 Text Start ---
+Error reading page 4: 'charmap' codec can't encode character '\ufb01' in position 153: character maps to <undefined>

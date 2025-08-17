@@ -25,7 +25,7 @@ class EquityPLUI:
         export_btn.pack(side=tk.LEFT, padx=4, pady=4)
 
         cols = (
-            'Security', 'ISIN', 'Buy Date', 'Buy Price', 'Buy Value',
+            'Security', 'ISIN', 'Qty', 'Buy Date', 'Buy Price', 'Buy Value',
             'Sell Date', 'Sell Price', 'Sell Value', 'Sell>=23-Jul-24',
             'Holding Period', 'Type', 'Profit/Loss'
         )
@@ -56,7 +56,7 @@ class EquityPLUI:
         if not fname:
             return
         header = [
-            'Security', 'ISIN', 'Buy Date', 'Buy Price', 'Buy Value',
+            'Security', 'ISIN', 'Qty', 'Buy Date', 'Buy Price', 'Buy Value',
             'Sell Date', 'Sell Price', 'Sell Value', 'Sell>=23-Jul-24',
             'Holding Period', 'Type', 'Profit/Loss'
         ]
@@ -73,7 +73,7 @@ class EquityPLUI:
                     sd = self.parse_date(sell_date)
                     sell_cutoff = 'Yes' if sd and sd >= date(2024, 7, 23) else 'No' if sd else ''
                     row = [
-                        r.get('security', ''), r.get('isin', ''), r.get('purchase_date', ''),
+                        r.get('security', ''), r.get('isin', ''), r.get('qty', ''), r.get('purchase_date', ''),
                         buy_price, buy_value, sell_date, sell_price, sell_value,
                         sell_cutoff, r.get('holding_period', ''), r.get('type', ''),
                         self.format_currency(r.get('profit_loss', ''))
@@ -115,7 +115,7 @@ class EquityPLUI:
             sd = self.parse_date(sell_date)
             sell_cutoff = 'Yes' if sd and sd >= date(2024, 7, 23) else 'No' if sd else ''
             vals = [
-                r.get('security', ''), r.get('isin', ''), r.get('purchase_date', ''),
+                r.get('security', ''), r.get('isin', ''), r.get('qty', ''), r.get('purchase_date', ''),
                 buy_price, buy_value, sell_date, sell_price, sell_value,
                 sell_cutoff, r.get('holding_period', ''), r.get('type', ''),
                 self.format_currency(r.get('profit_loss', ''))
